@@ -1,8 +1,5 @@
 data:
-  raw_path: "data/raw/"
-  processed_path: "data/processed/"
-  target_event: 24
-
-model:
-  learning_rate: 0.001
-  batch_size: 64
+  raw_batch: "data/raw/batch_1.parquet"
+  meta: "data/raw/train_meta.parquet"
+  processed_features: "data/processed/features.parquet"
+  sample_rows: 100000
