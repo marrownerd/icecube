@@ -24,7 +24,7 @@ def main():
         os.environ["MLFLOW_TRACKING_PASSWORD"] = getpass.getpass("Введите DagsHub Token: ")
         
     mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
-    mlflow.set_experiment("IceCube_MVP_Training")
+    mlflow.set_experiment("icecube_mvp")
 
     data_path = config["data"]["processed_features"]
     df = pl.read_parquet(data_path)
